@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "django-salesforce-oauth"
+version = "0.3.4"
+description = "Simple package for creating and signing users into your Django site using Salesforce as an OAuth provider"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/brno32/django-salesforce-oauth"
+authors = ["Alex Drozd <drozdster@gmail.com>"]
+keywords = ["django", "salesforce", "oauth"]
+packages = [
+    { include = "django_salesforce_oauth" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+django = "^3.0.7"
+requests = "^2.24.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^19.10b0"
+python-dotenv = "^0.13.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
